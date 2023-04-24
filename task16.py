@@ -6,3 +6,16 @@
 # Ввод: 3
 # -> 2
 
+n = int(input('Введите число N (количество элементов в массиве): '))
+arr = list()
+for i in range(n):
+    a = int(input())
+    arr.append(a)
+x = int(input('Введите число X:  '))
+count = 0
+for i in range(n):
+    if arr[i] == x:
+       count += 1
+print(count)
+ 
+#print(arr.count(k)) 
