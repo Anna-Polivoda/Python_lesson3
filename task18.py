@@ -6,3 +6,17 @@
 # Ввод: 8
 # -> 9
 
+n = int(input())
+arr = list()
+for i in range(n):
+    a = int(input())
+    arr.append(a)
+
+x = int(input())
+m = abs(x-arr[0])
+number = arr[0]
+for i in range(1, len(arr)):
+    if m > abs(arr[i]-x):
+        m = abs(arr[i]-x)
+        number = arr[i]
+print(number)
